@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PixaBy" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    </style>
+    <color name="bg_color">@color/white</color>
+    <style name="Theme.PixaBy" parent="Base.Theme.PixaBy" />
+    <color name="text_bg">@color/black</color>
+</resources>

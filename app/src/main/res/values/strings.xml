@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PixaBy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search for a photo</string>
+    <string name="photos">Photos</string>
+    <string name="videos">Videos</string>
+    <string name="search_for_a_video">Search for a video</string>
+</resources>

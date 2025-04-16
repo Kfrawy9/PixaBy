@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="115dp"
+    android:layout_height="110dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="4dp"
+    android:layout_marginTop="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/video_thumbnail"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="fitXY"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_play"
+            app:layout_constraintTop_toTopOf="@id/video_thumbnail"
+            app:layout_constraintEnd_toEndOf="@id/video_thumbnail"
+            android:layout_margin="6dp"
+            android:id="@+id/video_play_icon"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="1:20"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@id/video_play_icon"
+            app:layout_constraintTop_toTopOf="@id/video_play_icon"
+            app:layout_constraintBottom_toBottomOf="@id/video_play_icon"
+            android:layout_marginEnd="4dp"
+            android:textStyle="bold"
+            android:id="@+id/tv_video_duration"
+            />
+
+        <androidx.constraintlayout.widget.Group
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="tv_video_duration, video_play_icon"
+            android:id="@+id/thumbnail_info"
+            android:visibility="gone"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
